@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+body,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+img,
+input,
+li,
+ol,
+p,
+textarea,
+ul {
+    padding: 0;
+    margin: 0
+}
+
+body,
+html,
+ul,
+li,
+div,
+p,
+span {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+}
+
+/* 使用webkit内核的浏览器 */
+:-moz-placeholder {
+    color: #fff;
+}
+
+/* Firefox版本4-18 */
+::-moz-placeholder {
+    color: #fff;
+}
+
+/* Firefox版本19+ */
+:-ms-input-placeholder {
+    color: #fff;
+}
+
+/* IE浏览器 */
+li,
+ol,
+ul {
+    list-style: none
+}
+
+i {
+    font-style: inherit
+}
+
+html,
+body {
+    font-family: "Microsoft YaHei", "微软雅黑";
+    width: 100%;
+    height: 100%;
+    background: #0c182c;
+    margin: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+body a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* flex布局  http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html*/
+.d-flex {
+    display: flex;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+.flex-shrink {
+    flex-shrink: 0;
+}
+
+/* justify-content属性定义了项目在主轴上的对齐方式 */
+.j-start {
+    justify-content: flex-start;
+}
+
+.j-center {
+    justify-content: center;
+}
+
+.j-end {
+    justify-content: flex-end;
+}
+
+.j-sb {
+    justify-content: space-between;
+}
+
+.j-around {
+    justify-content: space-around;
+}
+
+/* align-items属性定义项目在交叉轴上如何对齐。 */
+/*flex-start：交叉轴的起点对齐。
+flex-end：交叉轴的终点对齐。
+center：交叉轴的中点对齐。
+baseline: 项目的第一行文字的基线对齐。
+stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。 */
+.a-center {
+    align-items: center;
+}
+
+.a-start {
+    align-items: flex-start;
+}
+
+.a-end {
+    align-items: flex-end;
+}
+
+.a-stretch {
+    align-items: stretch;
+}
+
+/* align-self属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。默认值为auto，表示继承父元素的align-items属性，如果没有父元素，则等同于stretch。 */
+.a-self-start {
+    align-self: flex-start;
+}
+
+.a-self-auto {
+    align-self: auto;
+}
+
+.a-self-end {
+    align-self: flex-end;
+}
+
+.a-self-stretch {
+    align-self: stretch;
+}
+
+.a-self-baseline {
+    align-self: baseline;
+}

@@ -1,0 +1,630 @@
+/* 头部样式 */
+.top-bar {
+    width: 100%;
+    height: 120px;
+    background-image: url(@/assets/images/header/top_bg.png);;
+    background-size: 100% 100%;
+    position: absolute;
+    opacity: 1;
+    z-index: 900;
+    top:0;
+    left: 0;
+}
+
+.top-bar .top-bar-right {
+    font-family: PangMenZhengDao;
+    color: #ffffff;
+    height: 50px;
+    letter-spacing: 3px;
+    line-height: 18px;
+    font-size: 18px;
+}
+
+
+.top-bar .top-bar-right .degree,
+.top-bar .top-bar-right .week,
+.top-bar .top-bar-right .weather,
+.top-bar .top-bar-right .time {
+    margin-right: 15px;
+}
+
+.top_menu_con{
+    width: 600px;
+    height: 50px;
+    position: absolute;
+    top:0;
+    left: 800px;
+}
+
+.top_menu_bt{
+    width: 150px;
+    height: 50px;
+    color: #ffffff;
+    font-weight: bold;
+    background-image: url(@/assets/images/header/top_menu_bt.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.top_menu_bt_s{
+    width: 150px;
+    height: 50px;
+    color: #ffffff;
+    font-weight: bold;
+    background-image: url(@/assets/images/header/top_menu_bt_s.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+
+.main_content{
+    width: 100%;
+    height: 100%;
+}
+
+.ol_map {
+    width: 100%;
+    height: 100%;
+}
+
+#div_xy {
+    z-index: 500;
+    position: absolute;
+    left: 10px;
+    bottom: 30px;
+    background: rgba(35, 35, 35, 0.7);
+    border-radius: 4px;
+    font-size: 10pt;
+    line-height: 20pt;
+    margin: 1pt;
+    padding: 1pt;
+    color: white;
+    border: 0px solid rgb(240, 240, 240);
+    font-family: Microsoft YaHei;
+}
+
+
+.top-menu-bar{
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    opacity: 1;
+    z-index: 900;
+    /* top:0; */
+    left: calc(50% - 150px);
+    top: 85px;
+}
+
+.top-menu-bar .menu-bt{
+    width: 100px;
+    height: 30px;
+    background-image: url(@/assets/images/topmenu/menu_bt_bg1.png);
+    background-size: 100% 100%;
+    margin-right: 5px;
+    text-align: center;
+    font-size: 14px;
+    font-weight:bold;
+    color: #ffff;
+    line-height: 30px;
+}
+
+.top-menu-bar .menu-bt1{
+    width: 40px;
+    height: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.top-menu-bar .menu-bt-bg{
+    width: 40px;
+    height: 40px;
+    background-image: url(@/assets/images/topmenu/top_menu_bt_bg.png);
+    background-size: 100% 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.top-menu-bar .menu-bt-bg-s{
+    width: 40px;
+    height: 40px;
+    background-image: url(@/assets/images/topmenu/top_menu_bt_bg_s.png);
+    background-size: 100% 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.top-menu-bar .menu-bt-select{
+    width: 100px;
+    height: 30px;
+    background-image: url(@/assets/images/topmenu/menu_bt_bg1.png);
+    background-size: 100% 100%;
+    margin-right: 5px;
+    text-align: center;
+    font-size: 14px;
+    font-weight:bold;
+    color: #ff8800;
+    line-height: 30px;
+}
+
+/* 输入框标签的样式 */
+.label {
+    display: inline-block;
+    width: 100px; /* 调整标签的宽度 */
+    text-align: right; /* 设置文本右对齐 */
+    margin-right: 10px; /* 右边距 */
+}
+
+/* 输入框的样式 */
+.input-field {
+    width: calc(80% - 110px);
+    padding: 0px;
+    margin-bottom: 15px;
+    border: 1px solid #afbeec; /* 边框颜色为浅蓝色 */
+    border-radius: 5px; /* 边框圆角 */
+    font-size: 16px;
+    color: #000; /* 文字颜色为黑色 */
+    background-color: #1a6f8f; /* 背景色为浅蓝色 */
+    outline: none; /* 去除默认的外边框 */
+}
+
+.input-field1 {
+    width: 65%;
+    padding: 10px;
+    margin-left: 35px;
+    margin-bottom: 15px; /* 底部外边距，用于控制元素与下方元素的间距 */
+    border: 1px solid #afbeec; /* 边框颜色为蓝色 */
+    border-radius: 5px; /* 边框圆角 */
+    font-size: 16px;
+    color: #000; /* 文字颜色为蓝色 */
+    background-color: #1a6f8f; /* 背景色为灰色 */
+    resize: vertical; /* 垂直方向可调整大小 */
+}
+
+.input-field2 {
+    width: 50%;
+    padding: 0px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+    border: 1px solid #afbeec; /* 边框颜色为浅蓝色 */
+    border-radius: 5px; /* 边框圆角 */
+    font-size: 16px;
+    color: #000; /* 文字颜色为黑色 */
+    background-color: #1a6f8f; /* 背景色为浅蓝色 */
+    outline: none; /* 去除默认的外边框 */
+}
+
+.incomplete-message{
+    margin-left: 50px;
+    color: #ff0000; /* 文字颜色为黑色 */
+}
+
+.show_windows{
+    width: 430px;
+    min-height: 320px;
+    background-image: url(@/assets/images/window/window_bg_900.png);
+    background-size: 100% 100%;
+    position: absolute;
+    opacity: 1;
+    z-index: 990;
+    top:100px;
+    left: 120px;
+}
+
+.show_windows1{
+    width: 430px;
+    min-height: 800px;
+    background-image: url(@/assets/images/window/window_bg_900.png);
+    background-size: 100% 100%;
+    position: absolute;
+    opacity: 1;
+    z-index: 990;
+    top:100px;
+    left: 120px;
+}
+
+.window_title {
+    width: 100%;
+    height: 40px;
+    background-image: url(@/assets/images/window/window_title_bg2.png);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* 设置标题文字颜色为白色 */
+}
+
+.form_content {
+    padding: 30px;
+    margin-left: 50px; /* 向右移动表单内容 */
+    height: auto; /* 自动调整高度以适应内容 */
+    color: white; /* 设置标题文字颜色为白色 */
+}
+
+.show_windows_title_close{
+    background-image: url(@/assets/images/window/close.png?v=001) !important;
+    background-size: 100% 100%;
+    font-style: normal;
+    overflow: hidden;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    margin-right: 28px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.show_windows_title{
+    width: 100%;
+    height: 40px;
+    background-image: url(@/assets/images/window/window_title_bg2.png);
+    background-size: 100% 100%;
+}
+
+.show_windows_title p{
+    color: #ffff;
+    padding-left: 50px;
+    line-height: 40px;
+
+}
+
+
+.show_windows_content{
+    width: 100%;
+    height: 100%;
+}
+
+.show_windows_content .content_line{
+    width: 100%;
+    height: 100px;
+}
+
+.show_windows_content .menu_con {
+    margin: 6px;
+    float: left;
+    width: 100px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.menu_con_select{
+    border: 1px solid #f0cd0b;
+}
+
+.show_windows_content .menu_con .map_item {
+    width: 100%;
+    height: 60px;
+}
+
+.show_windows_content .menu_con .map_title {
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    width: 100%;
+    height: 20px;
+}
+
+.show_windows_content_padding{
+    margin-left: 25px;
+    margin-right: 28px;
+}
+
+
+.show_windows_select_bt_line{
+    width: 100%;
+    height: 100px;
+}
+
+.show_windows_select_content{
+    width: 33.3%;
+    height: 100px;
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.show_windows_select_content table{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 13px;
+}
+
+.show_windows_select_content table td{
+    text-align: center;
+}
+
+
+.count_info_content_line{
+    width: 100%;
+    height: 125px;
+}
+
+.count_info_content{
+    width: 33.3%;
+    height: 125px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.count_info_content_area_line{
+    width: 100%;
+    height: 60px;
+}
+
+.count_info_content_area{
+    width: 33.3%;
+    height: 60px;
+    color: #fff;
+    font-size: 13px;
+    background-image: url(@/assets/images/count/count_info_area.png) !important;
+    background-repeat: no-repeat;
+}
+
+.count_info_content_area table{
+    width: 100%;
+    height: 90%;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+}
+
+.count_info_content_area_td_title{
+    width: 55%;
+    background-image: url(@/assets/images/count/count_info_area_title.png) !important;
+    background-size: 100% 100%;
+    text-align: left;
+}
+
+.count_info_content_area_td_value{
+    color: #04d8db;
+}
+
+.count_info_content_bg1{
+    background-image: url(@/assets/images/count/count_info_1.png) !important;
+    background-size: 100% 100%;
+}
+
+.count_info_content_bg2{
+    background-image: url(@/assets/images/count/count_info_2.png) !important;
+    background-size: 100% 100%;
+}
+
+.count_info_content_bg3{
+    background-image: url(@/assets/images/count/count_info_3.png) !important;
+    background-size: 100% 100%;
+}
+
+.show_windows_900{
+    width: 430px;
+    min-height: 600px;
+    background-image: url(@/assets/images/window/window_bg_900.png);
+    background-size: 100% 100%;
+    position: absolute;
+    opacity: 0.9;
+    z-index: 990;
+    top:70px;
+    right: 80px;
+}
+
+.show_windows_strong_600{
+    width: 600px;
+    min-height: 800px;
+    background-image: url(@/assets/images/window/window_bg_600.png);
+    background-size: 100% 100%;
+    position: absolute;
+    opacity: 1;
+    z-index: 990;
+    top:80px;
+    right: 0px;
+}
+
+.show_windows_title_600{
+    width: 100%;
+    height: 40px;
+    background-image: url(@/assets/images/window/window_title_bg_600.png?v=001);
+    background-size: 100% 100%;
+}
+
+.show_windows_title_600 p{
+    color: #ffff;
+    padding-left: 50px;
+    line-height: 40px;
+
+}
+
+.show_windows_600{
+    width: 430px;
+    min-height: 800px;
+    background-image: url(@/assets/images/window/window_bg_900.png);
+    background-size: 100% 100%;
+    position: absolute;
+    opacity: 1;
+    z-index: 990;
+    top:80px;
+    left: 5px;
+}
+
+.table_default{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    line-height: 30px;
+    border: 0px;
+    border-spacing: 0px;
+    border-collapse: separate;
+}
+
+.table_default td{
+    padding: 0px;
+
+}
+
+.table_default .tr_title{
+    background-color:rgba(255, 255, 255, 0.1);
+    height: 30px;
+}
+
+.table_default .tr_content{
+    color: #04d8db;
+    height: 30px;
+}
+
+.table_default .tr_strongtitle{
+    color: #04d8db;
+    background-color:rgba(255, 255, 255, 0.1);
+    height: 30px;
+}
+
+.show_windows_content_introduce{
+    width: 100%;
+    color: #04d8db;
+    font-size: 13px;
+}
+
+.left_menu_bar{
+    position: absolute;
+    width: 128px;
+    min-height: 300px;
+    opacity: 1;
+    z-index: 1001;
+    top:100px;
+    left: 0px;
+}
+
+.left_bt_item_s {
+    width: 100%;
+    height: 40px;
+    background-image: url(@/assets/images/buttom/left_bt_s.png) !important;
+    background-size: 100% 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    color: #ffffff;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.left_bt_item {
+    width: 100%;
+    height: 40px;
+    background-image: url(@/assets/images/buttom/left_bt.png) !important;
+    background-size: 100% 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    color: #ffffff;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.right_menu_bar{
+    position: absolute;
+    width: 128px;
+    min-height: 300px;
+    opacity: 1;
+    z-index: 1001;
+    top:100px;
+    right: 0px;
+}
+
+.right_bt_item {
+    width: 100%;
+    height: 40px;
+    background-image: url(@/assets/images/buttom/right_bt.png) !important;
+    background-size: 100% 100%;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    color: #ffffff;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.right_bt_item_s {
+    width: 100%;
+    height: 40px;
+    background-image: url(@/assets/images/buttom/right_bt_s.png) !important;
+    background-size: 100% 100%;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    color: #ffffff;
+    font-size: 13px;
+    font-style: italic;
+}
+
+
+.count_info_content_line {
+    width: 100%;
+    height: 125px;
+}
+
+.count_info_content {
+    width: 33.3%;
+    height: 125px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.count_info_content_area_line {
+    width: 100%;
+    height: 70px;
+}
+
+.count_info_content_area {
+    width: 49.5%;
+    height: 70px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.count_info_content_area table {
+    width: 80%;
+    height: 90%;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+}
+
+.count_info_content_area_td_title {
+    width: 55%;
+    background-image: url(@/assets/images/count/count_info_area_title.png) !important;
+    background-size: 100% 100%;
+    text-align: left;
+}
+
+.count_info_content_area_td_value {
+    color: #04d8db;
+}
+
+.count_info_content_bg1 {
+    background-image: url(@/assets/images/count/count_info_1.png) !important;
+    background-size: 100% 100%;
+}
+
+.count_info_content_bg2 {
+    background-image: url(@/assets/images/count/count_info_2.png) !important;
+    background-size: 100% 100%;
+}
+
+.count_info_content_bg3 {
+    background-image: url(@/assets/images/count/count_info_3.png) !important;
+    background-size: 100% 100%;
+}
+
+.tooltip_style2 {
+    width: 300px;
+    height: 150px;
+    background: url(@/assets/images/tooltip/show_window_bg.png) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    color: #fff;
+    font-size: 12px;
+}
